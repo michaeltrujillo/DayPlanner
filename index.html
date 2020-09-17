@@ -1,11 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework #5</title>
-</head>
-<body>
-    <h1>Day Planner</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" event="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" event="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+      <!-- <div class="container">
+
+        
+        <div class="row">
+
+          <div class="col">
+            9 AM
+          </div>
+          <div class="col-6">
+            <textarea id="txt1"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn1">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            10 AM
+          </div>
+          <div class="col-6">
+            <textarea id="txt2"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn2">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            11 AM
+          </div>
+          <div class="col-6">
+            <textarea id="txt3"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn3">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            12 AM
+          </div>
+          <div class="col-6">
+            <textarea id="txt4"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn4">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            1 PM
+          </div>
+          <div class="col-6">
+            <textarea id="txt5"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn5">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            2 PM
+          </div>
+          <div class="col-6">
+            <textarea id="txt6"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn6">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            3 PM
+          </div>
+          <div class="col-6">
+            <textarea id="txt7"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn7">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            4 PM
+          </div>
+          <div class="col-6">
+            <textarea id="txt8"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn8">save</button> 
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            5 PM
+          </div>
+          <div class="col-6">
+            <textarea id="txt9"></textarea>
+          </div>
+          <div class="col">
+            <button id="btn9">save</button> 
+          </div>
+
+        </div>
+  -->
+
+        <!-- TEST -->
+        <div class="row">
+
+          <div class="col">
+            TEST
+          </div>
+          <div class="col-6">
+            <textarea id="testText">hi</textarea>
+          </div>
+          <div class="col">
+            <button class="testBtn">save test</button> 
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+
+      //Today's date
+        $("#currentDay").append(moment().format("dddd MMM Do")); 
+
+      //test btn, txt, output
+      const text = $('#testText');
+      const btn = $('#testBtn');
+
+        btn.on("click", function(){
+            console.log(text);
+        });
+
+
+
+      // console.log(value);
+    
+      //       btn.onclick = function () {
+      //           const value = text.value;
+
+      //           console.log(value);
+      //           if (value) {
+      //               localStorage.setItem(value);
+      //               location.reload();
+      //           }
+      //       };
+
+
+          // for (let i = 0; i < localStorage.length; i++) {
+          //     const key = localStorage.key(i);
+          //     const value = localStorage.getItem(key);
+          //     text.innerHTML += `${value}>`;
+          // };
+
+    </script>
+  </body>
 </html>
